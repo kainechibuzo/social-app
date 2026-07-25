@@ -52,7 +52,7 @@
     "build-all": "pnpm intl:build && pnpm use-build-number-with-bump eas build --platform all",
     "build-ios": "pnpm use-build-number-with-bump eas build -p ios",
     "build-android": "pnpm use-build-number-with-bump eas build -p android",
-    "build": "pnpm use-build-number-with-bump eas build",
+    "build": "pnpm build-web",
     "build-embed": "cd bskyembed && pnpm build && pnpm build-snippet && cd .. && node ./scripts/post-embed-build.js",
     "start": "expo start --dev-client",
     "start:prod": "expo start --dev-client --no-dev --minify",
